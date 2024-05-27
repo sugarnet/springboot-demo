@@ -16,7 +16,7 @@ class DemoController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
 
-	@Value("${message}")
+	@Value("${local.message}")
 	private String message;
 
 	@GetMapping("/")
