@@ -42,7 +42,7 @@ class DemoController {
 		String message = environment.getProperty("MESSAGE");
 
 		if (Objects.isNull(message) || message.isEmpty()) {
-			return new ResponseEntity<>("Default Message!!", HttpStatus.OK);
+			return new ResponseEntity<>("Default Message for springboot-demo!!", HttpStatus.OK);
 		}
 
 		LOGGER.info("Message: {}", message);
